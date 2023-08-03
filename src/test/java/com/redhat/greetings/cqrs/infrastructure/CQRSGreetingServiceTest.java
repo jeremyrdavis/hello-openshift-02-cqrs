@@ -5,6 +5,7 @@ import com.redhat.greetings.cqrs.domain.GreetingDTO;
 import com.redhat.greetings.cqrs.domain.SourceSystem;
 import com.redhat.greetings.cqrs.domain.GreetingRepository;
 import io.quarkus.test.InjectMock;
+import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import org.junit.jupiter.api.BeforeEach;
@@ -48,4 +49,6 @@ public class CQRSGreetingServiceTest {
         assertNotNull(results);
         assertEquals(2, results.size());
     }
+
+
 }
